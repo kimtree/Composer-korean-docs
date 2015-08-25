@@ -81,7 +81,7 @@ php composer.phar install
 php composer.phar update
 {% endhighlight %}
 
-업데이트 명령어는 프로젝트의 모든 의존관계럴 설정한 패키지들을 확인하고`composer.lock`에 정확한 버전을 기입해줍니다.
+업데이트 명령어는 프로젝트의 모든 의존관계를 설정한 패키지들을 확인하고`composer.lock`에 정확한 버전을 기입해줍니다.
 
 만약 전체 패키지가 아닌 일부 패키지만 업데이트하길 원한다면, 다음과 같이 할 수 있습니다.
 
@@ -527,7 +527,7 @@ COMPOSER=composer-other.json php composer.phar install
 
 ### no_proxy
  
-프록시를 사용하고 있는 중에 특정 도메인에서 프록시를 사용하지 않기를 원한다면 `no_proxy` 변수를 사용하면 됩니다. 프록시를 사용하지 않기를 워하는 도메인을 콤마로 구분하여 셋팅하면 됩니다. 
+프록시를 사용하고 있는 중에 특정 도메인에서 프록시를 사용하지 않기를 원한다면 `no_proxy` 변수를 사용하면 됩니다. 프록시를 사용하지 않기를 원하는 도메인을 콤마로 구분하여 셋팅하면 됩니다. 
 
 설정값은 도메인, IP 어드레스 또는 CIDR 형식의 IP 어드레스를 사용할 수 있습니다. 또한 포트에 따라서 필터링을 적용해 차단할 수도 있습니다.(예를 들어 `:80`과 같은)
 만약 전체 HTTP 요청에서 프록시 사용을 하지 않기를(무시하기를) 원한다면 `*`과 같이 설정할 수도 있습니다.  
@@ -536,7 +536,7 @@ COMPOSER=composer-other.json php composer.phar install
 
 ### HTTP_PROXY_REQUEST_FULLURI
 
-프록시를 사용하지만 request_fullurl flag를 지원하지 않는다면 이 환경변수를 `false` 또는 `0`으로 설정하여 컴포저가 request_fulluri 옵션을 설정하는 것을 방지할 수 있습니다. 
+프록시를 사용하지만 request_fulluri flag를 지원하지 않는다면 이 환경변수를 `false` 또는 `0`으로 설정하여 컴포저가 request_fulluri 옵션을 설정하는 것을 방지할 수 있습니다. 
 
 ### COMPOSER_HOME 컴포저 홈 디렉토리 {#composer-home}
 
