@@ -123,7 +123,7 @@ php composer.phar update monolog/monolog [...]
 require 'vendor/autoload.php';
 {% endhighlight %}
 
-이렇게 함으로써 서드파티의 코드를를 사용하는 것을 아주 쉽게 만들어 줍니다. 예를 들어 : 작성하고 있는 프로젝트가 monolog 에 의존성을 가지고 있을 때 오토로딩을 사용하면 바로 해당 클래스를 사용할 수 있다는 것을 의미합니다. 
+이렇게 함으로써 서드파티의 코드를 사용하는 것을 아주 쉽게 만들어 줍니다. 예를 들어 : 작성하고 있는 프로젝트가 monolog 에 의존성을 가지고 있을 때 오토로딩을 사용하면 바로 해당 클래스를 사용할 수 있다는 것을 의미합니다. 
 
 {% highlight php %}
 $log = new Monolog\Logger('name');
