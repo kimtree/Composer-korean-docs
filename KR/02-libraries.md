@@ -19,9 +19,6 @@
 }
 {% endhighlight %}
 
-In this case the project name is `acme/hello-world`, where `acme` is the
-vendor name. Supplying a vendor name is mandatory.
-
 이 예제에서 프로젝트의 이름은 `acme/hello-world`이고 `acme`은 벤더 이름이됩니다. 벤더의 이름은 항상 존재해야 합니다.
 
 > **주의:** 만약 벤더 이름을 어떻게 정해야 할지 모르겠다면 보통은 github의 유저네임을 이용한다는 점을 참고합니다. 패키지의 이름은 대소문자를 구별하지 않고 모두 소문자를 사용하고 대쉬로 단어들을 구분합니다. 
