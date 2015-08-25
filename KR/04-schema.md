@@ -74,9 +74,6 @@ composer 가 기본으로 지원하는 4가지 타입들 (설치 패키지가 �
  - **metapackage:** requirement가 포함된 비어있는 패키지는 작동시 설치가 된다. 그러나 파일이 포함되어 있지 않으면 어떠한 내용도 파일시스템에 쓰지 않는다. 그러므로 설치시에 dist 혹은 source key 를 요구하지 않고 설치됩니다.
 - **composer-plugin:** `composer-plugin`타입의 패키지는 다른 커스텀 패키지들을 위해 인스톨러를 제공합니다. 자세한 내용은 [dedicated article](/Composer-korean-docs/doc/articles/custom-installers.md)에서 확인 할수 있습니다.
   
-Only use a custom type if you need custom logic during installation. It is
-recommended to omit this field and have it just default to `library`.
-
 패키지를 설치하는데 커스텀 로직이 필요하면 커스텀 타입을 사용하면 됩니다. 그 외에는 타입 설정을 하지 않거나 `library` 기본 셋팅을 하는것을 추천합니다.
 
 ### keywords
